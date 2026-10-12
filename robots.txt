@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mingen888.github.io/sitemap.xml
+Sitemap: https://ericli-88.github.io/sitemap.xml
