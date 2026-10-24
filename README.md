@@ -8,7 +8,7 @@ https://ericli-88.github.io/
 
 This repository hosts my personal website through GitHub Pages. The repository is public and named `ericli-88.github.io`.
 
-The website includes my education, AI/ML experience, research work, project posters, résumé, and contact information.
+The website includes my education, AI/ML experience, research work, a Projects section featuring Cross-Functional Contract Copilot, project screenshots and posters, résumé, and contact information. Project images support the same in-page zoom viewer as experience images.
 
 ## Search and indexing
 
