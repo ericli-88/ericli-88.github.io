@@ -44,14 +44,14 @@
 .experience-detail p{max-width:850px}
 .experience-media{max-width:860px;margin-top:19px}
 footer{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:15px;margin-top:18px;padding:34px 0 32px;border:0;background:var(--ink);box-shadow:0 0 0 100vmax var(--ink);clip-path:inset(0 -100vmax);color:#e7efed}
-.footer-icons{display:flex;align-items:center;justify-content:center;gap:19px}
-.footer-icons a,.footer-icons>span{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(255,255,255,.24);border-radius:7px;color:#f8faf8}
-.footer-icons a:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55);text-decoration:none}
-.footer-icons>span{color:#91a4a5;cursor:default}
-.footer-icons svg{width:29px;height:29px}
+.contact-icons{display:flex;align-items:center;justify-content:center;gap:19px}
+.contact-icons a,.contact-icons>span{display:grid;place-items:center;width:48px;height:48px;border:1px solid rgba(255,255,255,.24);border-radius:7px;color:#f8faf8}
+.contact-icons a:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55);text-decoration:none}
+.contact-icons>span{color:#91a4a5;cursor:default}
+.contact-icons svg{width:29px;height:29px}
 footer p{margin:0;color:#d4dfdc;font-size:14px}
 @media(max-width:900px){.page{width:min(100% - 40px,760px)}.intro{padding:38px 0 36px}.intro-grid{grid-template-columns:1fr;gap:30px}.intro-copy>p{max-width:720px}.intro-side{padding-top:0}.education-marks{max-width:470px}.intro-links{max-width:470px}.experience-row{grid-template-columns:64px minmax(0,1fr) 78px;gap:16px}.experience-media{max-width:none}}
-@media(max-width:700px){.page{width:min(100% - 30px,940px)}.site-header{padding:18px 0}.intro{padding:34px 0 32px}.intro-grid{gap:26px}.intro-copy>p{font-size:15px}.education-marks{gap:12px}.mark-image{width:100%;height:auto}.intro-links{grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}.intro-links .email-link{grid-column:1/-1}.content-section{padding:30px 0 36px}.experience-row{grid-template-columns:49px minmax(0,1fr);gap:11px;padding:23px 0}footer{margin-top:8px;padding:29px 0 27px}.footer-icons{gap:13px}.footer-icons a,.footer-icons>span{width:44px;height:44px}.footer-icons svg{width:26px;height:26px}footer p{font-size:13px;text-align:center}}
+@media(max-width:700px){.page{width:min(100% - 30px,940px)}.site-header{padding:18px 0}.intro{padding:34px 0 32px}.intro-grid{gap:26px}.intro-copy>p{font-size:15px}.education-marks{gap:12px}.mark-image{width:100%;height:auto}.intro-links{grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}.intro-links .email-link{grid-column:1/-1}.content-section{padding:30px 0 36px}.experience-row{grid-template-columns:49px minmax(0,1fr);gap:11px;padding:23px 0}footer{margin-top:8px;padding:29px 0 27px}.contact-icons{gap:13px}.contact-icons a,.contact-icons>span{width:44px;height:44px}.contact-icons svg{width:26px;height:26px}footer p{font-size:13px;text-align:center}}
 
 /* Revised intro, experience labels, and in-page media viewer. */
 .site-header{justify-content:flex-end}
@@ -130,3 +130,8 @@ body:has(.lightbox[open]){overflow:hidden}
 .experience-media figcaption.maritime-repo-link{justify-content:flex-start}
 @media(max-width:900px){.project-copy h3{font-size:23px}}
 @media(max-width:700px){.project-card{padding:23px 0 0}.project-copy h3{font-size:22px}.project-copy>p,.project-highlights{font-size:14px}}
+
+/* Contact shortcuts sit below the internship note in the introduction. */
+.intro-copy .contact-icons{justify-content:flex-start;gap:16px;margin-top:22px}
+.intro-copy .contact-icons a{border-color:var(--line);color:var(--ink)}
+.intro-copy .contact-icons a:hover,.intro-copy .contact-icons a:focus-visible{background:#e9f3f1;border-color:#5f9296;outline:2px solid #5f9296;outline-offset:3px}
