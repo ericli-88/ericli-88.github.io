@@ -135,3 +135,19 @@ body:has(.lightbox[open]){overflow:hidden}
 .intro-copy .contact-icons{justify-content:flex-start;gap:16px;margin-top:22px}
 .intro-copy .contact-icons a{border-color:var(--line);color:var(--ink)}
 .intro-copy .contact-icons a:hover,.intro-copy .contact-icons a:focus-visible{background:#e9f3f1;border-color:#5f9296;outline:2px solid #5f9296;outline-offset:3px}
+
+/* Keep the original REU poster beside the proposed architecture. */
+.experience-media.reu-media{width:min(100%,780px);max-width:780px}
+.reu-gallery{display:grid;grid-template-columns:minmax(0,1fr) 28px minmax(0,1fr);gap:14px;align-items:start}
+.reu-figure{min-width:0;margin:0}
+.reu-gallery .media-preview{aspect-ratio:4/3}
+.reu-gallery .media-preview img{width:100%;height:100%;object-fit:contain}
+.reu-figure figcaption{margin-top:8px}
+.reu-progression{display:block;width:28px;height:28px;align-self:center;margin-bottom:26px;color:var(--link)}
+.experience-media figcaption.reu-links{flex-direction:column;align-items:flex-start;gap:7px;margin-top:12px}
+@media(max-width:700px){
+  .reu-gallery{grid-template-columns:minmax(0,1fr) 22px minmax(0,1fr);gap:8px}
+  .reu-progression{width:22px;height:22px}
+  .reu-gallery .zoom-hint{right:5px;bottom:5px;padding:5px 6px;font-size:10px}
+  .reu-figure figcaption{font-size:11px}
+}
