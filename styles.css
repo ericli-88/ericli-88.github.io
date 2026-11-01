@@ -135,6 +135,7 @@ body:has(.lightbox[open]){overflow:hidden}
 .intro-copy .contact-icons{justify-content:flex-start;gap:16px;margin-top:22px}
 .intro-copy .contact-icons a{border-color:var(--line);color:var(--ink)}
 .intro-copy .contact-icons a:hover,.intro-copy .contact-icons a:focus-visible{background:#e9f3f1;border-color:#5f9296;outline:2px solid #5f9296;outline-offset:3px}
+.school-date{display:block;margin-top:5px;font-size:.92em;line-height:1.4;white-space:nowrap}
 
 /* Keep the original REU poster beside the proposed architecture. */
 .experience-media.reu-media{width:min(100%,780px);max-width:780px}
