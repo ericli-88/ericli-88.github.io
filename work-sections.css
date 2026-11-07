@@ -1,0 +1,144 @@
+/* Work sections only: the introduction, navigation, and footer retain their design. */
+:is(#experience, #projects) {
+  --work-ink: #172b46;
+  --work-copy: #4d5c6e;
+  --work-muted: #64748b;
+  --work-line: #dfe5ec;
+  --work-blue: #246aa3;
+  border-color: var(--work-line);
+  color: var(--work-ink);
+}
+
+:is(#experience, #projects) h2 {
+  color: var(--work-ink);
+  letter-spacing: -.035em;
+}
+
+#experience .experience-list,
+#experience .experience-row,
+#projects .project-card {
+  border-color: var(--work-line);
+}
+
+#experience .date-range {
+  color: var(--work-muted);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.65;
+  font-variant-numeric: tabular-nums;
+}
+
+:is(#experience, #projects) h3 {
+  color: var(--work-ink);
+}
+
+#experience .experience-detail h3 span {
+  color: #68788c;
+}
+
+#experience .experience-detail p,
+#projects .project-copy > p,
+#projects .project-highlights {
+  color: var(--work-copy);
+  line-height: 1.75;
+}
+
+:is(#experience, #projects) .experience-type {
+  border: 1px solid #d7e5f5;
+  border-radius: 5px;
+  background: #edf4fc;
+  color: #285d8b;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .065em;
+}
+
+#experience [data-kind="internship"] .experience-type {
+  border-color: #e8dfce;
+  background: #f7f2e9;
+  color: #7b633b;
+}
+
+:is(#experience, #projects) .keyword-row {
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+:is(#experience, #projects) .keyword-chip {
+  border: 1px solid #dce3ec;
+  border-radius: 5px;
+  padding: 4px 9px;
+  background: #fff;
+  color: #52647a;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+:is(#experience, #projects) .media-preview {
+  border: 1px solid #dbe2eb;
+  border-radius: 10px;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 0 3px 14px rgba(24, 47, 76, .045);
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+:is(#experience, #projects) .media-preview img {
+  border-radius: 5px;
+}
+
+:is(#experience, #projects) .media-preview:hover,
+:is(#experience, #projects) .media-preview:focus-visible {
+  border-color: #8cafd0;
+  box-shadow: 0 5px 20px rgba(24, 47, 76, .09);
+  outline: 2px solid #b7d3ed;
+  outline-offset: 3px;
+}
+
+:is(#experience, #projects) .zoom-hint {
+  border: 1px solid rgba(199, 211, 225, .8);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, .96);
+  color: #2d4868;
+  font-weight: 500;
+  box-shadow: 0 1px 5px rgba(24, 47, 76, .06);
+}
+
+:is(#experience, #projects) .experience-media figcaption {
+  color: var(--work-muted);
+  line-height: 1.65;
+}
+
+:is(#experience, #projects) a {
+  color: var(--work-blue);
+  text-decoration: none;
+  border-bottom-color: #b8cce0;
+  line-height: 1.65;
+}
+
+:is(#experience, #projects) a:hover {
+  color: #174c7a;
+  border-bottom-color: #246aa3;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+:is(#experience, #projects) a:focus-visible {
+  outline: 2px solid #8cafd0;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+#experience .reu-progression {
+  color: #91a5bd;
+}
+
+#projects .project-highlights li::marker {
+  color: #608bb1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(#experience, #projects) .media-preview {
+    transition: none;
+  }
+}
